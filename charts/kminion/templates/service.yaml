@@ -21,6 +21,9 @@ metadata:
   namespace: {{ .Release.Namespace | quote }}
   labels:
     {{- include "kminion.labels" . | nindent 4 }}
+    {{- with .Values.service.labels}}
+    {{- toYaml . | nindent 4}}
+    {{- end}}
   {{- if .Values.service.annotations }}
   annotations:
     {{- toYaml .Values.service.annotations | nindent 4 }}

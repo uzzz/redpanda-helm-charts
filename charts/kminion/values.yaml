@@ -76,6 +76,7 @@ service:
     #   targetPort: 8443
     #   protocol: TCP
     #   name: expose-x509-for-ttl-checks
+  labels: {}
 
 
 ingress:
