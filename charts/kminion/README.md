@@ -203,6 +203,10 @@ The extraPorts can be used to make discoverable ports for Prometheus ServiceMoni
 
 **Default:** `[]`
 
+### [service.labels](https://artifacthub.io/packages/helm/redpanda-data/redpanda?modal=values&path=service.labels)
+
+**Default:** `{}`
+
 ### [service.port](https://artifacthub.io/packages/helm/redpanda-data/redpanda?modal=values&path=service.port)
 
 The port for kminion metrics endpoint
